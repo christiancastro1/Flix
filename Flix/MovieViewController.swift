@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AlamofireImage
+import AlamofireImage 
 
 
 class MovieViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{

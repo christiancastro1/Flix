@@ -4,7 +4,7 @@
 target 'Flix' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'AlamofireImage'
-  # Pods for Flix
 
+  # Pods for Flix
+   pod 'AlamofireImage'
 end
