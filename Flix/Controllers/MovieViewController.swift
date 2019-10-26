@@ -81,6 +81,16 @@ class MovieViewController: UIViewController, UITableViewDataSource, UITableViewD
          
         return cell
       }
+      // this is to prepare the view controller before we click on it. Data that will be passed
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) { // sender is the cell since thats the action that triggers this
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        let movieDetail = segue.destination as! MovieDetailsViewController
+        movieDetail.movie = movie
+        
+    }
       
     
 
